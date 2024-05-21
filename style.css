@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #bfe1c9;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
   }
   
   .container {
-    background: #fff;
+    background: #F5CDDE;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -23,8 +23,9 @@ body {
     margin-bottom: 20px;
   }
   
+
   h1, h2 {
-    color: #333;
+    color: #6123a9;
   }
   
   section {
@@ -40,7 +41,7 @@ body {
   form input, form button {
     padding: 10px;
     margin-right: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #9e93b3;
     border-radius: 5px;
   }
   
@@ -61,7 +62,7 @@ body {
   }
   
   ul li {
-    background: #e9ecef;
+    background: #ec95ec;
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 5px;
@@ -70,8 +71,8 @@ body {
   }
   
   ul li button {
-    background-color: #dc3545;
-    color: #fff;
+    background-color: #98c4eb;
+    color: #e9f3b3;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -79,7 +80,7 @@ body {
   }
   
   ul li button:hover {
-    background-color: #c82333;
+    background-color: #e9f3b3;
   }
   
   #timer-display {
@@ -91,11 +92,11 @@ body {
   #timer button {
     margin-right: 5px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #74abe2;
     border-radius: 5px;
   }
   
   #timer button:hover {
-    background-color: #f8f9fa;
+    background-color: #a8e3f9;
   }
   
