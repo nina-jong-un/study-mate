@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Study Planner</h1>
+    </header>
+    
+    <section id="timetable">
+      <h2>Study Timetable</h2>
+      <form id="timetable-form">
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="time" id="start-time">
+        <input type="time" id="end-time">
+        <button type="button" onclick="addTimetableEntry()">Add</button>
+      </form>
+      <ul id="timetable-list"></ul>
+    </section>
+    
+    <section id="timer">
+      <h2>Study Timer</h2>
+      <div id="timer-display">00:00</div>
+      <button id="start-timer" onclick="startTimer()">Start</button>
+      <button id="stop-timer" onclick="stopTimer()">Stop</button>
+      <button id="reset-timer" onclick="resetTimer()">Reset</button>
+    </section>
+    
+    <section id="todo">
+      <h2>To-Do List</h2>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="New Task">
+        <button type="button" onclick="addTodo()">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
