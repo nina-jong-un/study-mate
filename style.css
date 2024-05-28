@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('bg1.jpg') no-repeat center center fixed;
+  background: url('../bg1.jpg') no-repeat center center fixed;
   background-size: cover;
   transition: background-image 0.5s ease-in-out;
 }
