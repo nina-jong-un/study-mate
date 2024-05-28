@@ -207,7 +207,7 @@ function pauseMusic() {
   const audioPlayer = document.getElementById('audio-player');
   audioPlayer.pause();
 }
-const backgroundImages = ['bg1.jpg', 'bg2.gif', 'bg3.jpg','bg4.jpg','bg5.jpg','bg6.jpg']; // Add more images as needed
+const backgroundImages = ['../bg1.jpg', '../bg2.gif', '../bg3.jpg','../bg4.jpg','../bg5.jpg','../bg6.jpg']; // Add more images as needed
 let currentIndex = 0;
 
 // Function to change background image
