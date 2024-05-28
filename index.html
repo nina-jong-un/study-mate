@@ -29,6 +29,7 @@
       <button id="start-timer" onclick="startTimer()">Start</button>
       <button id="stop-timer" onclick="stopTimer()">Stop</button>
       <button id="reset-timer" onclick="resetTimer()">Reset</button>
+      <img id="study-image" src="study.gif" alt="Cute Cat">
     </section>
     
     <section id="todo">
@@ -39,7 +40,27 @@
       </form>
       <ul id="todo-list"></ul>
     </section>
+
+    <section id="music-player">
+      <h2>Music Player</h2>
+      <audio id="audio-player" controls loop>
+        <source src="Memories-of-Spring(chosic.com).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="music-controls">
+      <button onclick="playMusic()">Play Music</button>
+      <button onclick="pauseMusic()">Pause Music</button>
+    </section>
+    <section id="study-graph">
+      <h2>Daily Study Hours</h2>
+      <canvas id="studyChart"></canvas>
+    </section>
+    
   </div>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>
