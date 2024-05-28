@@ -1,102 +1,183 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #bfe1c9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    background: #F5CDDE;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 800px;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  margin: 2;
+  padding: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
 
-  h1, h2 {
-    color: #6123a9;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  form input, form button {
-    padding: 10px;
-    margin-right: 5px;
-    border: 1px solid #9e93b3;
-    border-radius: 5px;
-  }
-  
-  form button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #218838;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    background: #ec95ec;
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  ul li button {
-    background-color: #98c4eb;
-    color: #e9f3b3;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  ul li button:hover {
-    background-color: #e9f3b3;
-  }
-  
-  #timer-display {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  #timer button {
-    margin-right: 5px;
-    padding: 10px;
-    border: 1px solid #74abe2;
-    border-radius: 5px;
-  }
-  
-  #timer button:hover {
-    background-color: #a8e3f9;
-  }
-  
+.container {
+  background: rgba(128, 123, 126, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #e5d7f7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#study-image {
+  display: none; /* Initially hidden */
+  margin: 0 auto; /* Center align */
+  width: 100%; /* Adjust size as needed */
+  max-width: 500px;
+  animation: catAnimation 2s infinite;
+}
+
+@keyframes catAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Form styling for input boxes */
+form input {
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #c39797;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #faebd7; /* Light background */
+  color: #ca7f68; /* Text color */
+}
+
+/* Form button styling */
+form button, #timer button, ul li button {
+  background: linear-gradient(45deg, #da969b, #ca7f68);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+form button:hover, #timer button:hover, ul li button:hover {
+  background: linear-gradient(45deg, #ca7f68, #da969b);
+}
+
+/* Completed task styling */
+.completed {
+  text-decoration: line-through;
+  color: #5f5959; /* Lighter color */
+}
+
+/* Task list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #ffb3b3;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li button {
+  background-color: #da969b;
+  color: #faebd7;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: #c39797;
+}
+
+/* Timer display styling */
+#timer-display {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#timer button {
+  margin-right: 5px;
+  padding: 10px;
+  border: 1px solid #74abe2;
+  border-radius: 5px;
+}
+
+#timer button:hover {
+  background-color: #a8e3f9;
+}
+
+/* Music player styling */
+#music-player {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#music-player h2 {
+  color: #e5d7f7;
+}
+
+#audio-player {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #faebd7; /* Light background */
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Music control buttons styling */
+#music-controls button {
+  background: linear-gradient(45deg, #da969b, #ca7f68);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  margin: 5px;
+}
+
+#music-controls button:hover {
+  background: linear-gradient(45deg, #ca7f68, #da969b);
+}
+#study-graph {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#study-graph h2 {
+  color: #e5d7f7;
+}
+
+#studyChart {
+  max-width: 100%;
+  height: 400px;
+  color:#fbcb2e
+}
